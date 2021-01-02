@@ -1,8 +1,5 @@
-#!/usr/bin/env python
-
 import os
 import re
-
 import js2py
 import requests
 from lxml import etree
@@ -16,16 +13,16 @@ logger.add(
 )
 
 headers = {
-    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36",
 }
 proxies = {}
 
-# 如果代理不稳定，不推荐使用
+# 设置网络代理
 # local proxy service
 # proxies example:
 proxies = {
-    "http": "socks5://127.0.0.1:1080",
-    "https": "socks5://127.0.0.1:1080",
+    "http": "http://localhost:4780",
+    "https": "http://localhost:4780"
 }
 
 
